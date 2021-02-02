@@ -17,6 +17,16 @@
 		CAC4F89D25C9FEED00358B51 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC4F89C25C9FEED00358B51 /* CameraViewController.swift */; };
 		CAC4F8A025C9FEFC00358B51 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC4F89F25C9FEFC00358B51 /* NotificationViewController.swift */; };
 		CAC4F8A325C9FF0700358B51 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC4F8A225C9FF0700358B51 /* ProfileViewController.swift */; };
+		CAC4F8AA25CA07E700358B51 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC4F8A925CA07E700358B51 /* RegisterViewController.swift */; };
+		CAC4F8AD25CA07F100358B51 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC4F8AC25CA07F100358B51 /* LoginViewController.swift */; };
+		CAC4F8B025CA083200358B51 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC4F8AF25CA083200358B51 /* PostViewController.swift */; };
+		CAC4F8B325CA085700358B51 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC4F8B225CA085700358B51 /* EditProfileViewController.swift */; };
+		CAC4F8B625CA0A1700358B51 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC4F8B525CA0A1700358B51 /* SettingsViewController.swift */; };
+		CAC4F8B925CA0AAE00358B51 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC4F8B825CA0AAE00358B51 /* ListViewController.swift */; };
+		CAC4F8BC25CA0AD600358B51 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC4F8BB25CA0AD600358B51 /* SearchViewController.swift */; };
+		CAC4F8BF25CA0AE100358B51 /* SeachResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC4F8BE25CA0AE100358B51 /* SeachResultViewController.swift */; };
+		CAC4F8C225CA0B2B00358B51 /* PostEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC4F8C125CA0B2B00358B51 /* PostEditorViewController.swift */; };
+		CAC4F8C525CA0B7400358B51 /* PostPublishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC4F8C425CA0B7400358B51 /* PostPublishViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +42,16 @@
 		CAC4F89C25C9FEED00358B51 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		CAC4F89F25C9FEFC00358B51 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		CAC4F8A225C9FF0700358B51 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		CAC4F8A925CA07E700358B51 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		CAC4F8AC25CA07F100358B51 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CAC4F8AF25CA083200358B51 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		CAC4F8B225CA085700358B51 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
+		CAC4F8B525CA0A1700358B51 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		CAC4F8B825CA0AAE00358B51 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		CAC4F8BB25CA0AD600358B51 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		CAC4F8BE25CA0AE100358B51 /* SeachResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeachResultViewController.swift; sourceTree = "<group>"; };
+		CAC4F8C125CA0B2B00358B51 /* PostEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostEditorViewController.swift; sourceTree = "<group>"; };
+		CAC4F8C425CA0B7400358B51 /* PostPublishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostPublishViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +121,8 @@
 		CAC4F89625C9FD5E00358B51 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				CAC4F88225C9F5C200358B51 /* HomeViewController.swift */,
-				CAC4F89925C9FED100358B51 /* ExploreViewController.swift */,
-				CAC4F89C25C9FEED00358B51 /* CameraViewController.swift */,
-				CAC4F89F25C9FEFC00358B51 /* NotificationViewController.swift */,
-				CAC4F8A225C9FF0700358B51 /* ProfileViewController.swift */,
+				CAC4F8A725CA07D000358B51 /* Other */,
+				CAC4F8A525CA073F00358B51 /* CoreTabs */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -117,6 +134,43 @@
 				CAC4F88925C9F5C300358B51 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		CAC4F8A525CA073F00358B51 /* CoreTabs */ = {
+			isa = PBXGroup;
+			children = (
+				CAC4F88225C9F5C200358B51 /* HomeViewController.swift */,
+				CAC4F89925C9FED100358B51 /* ExploreViewController.swift */,
+				CAC4F89C25C9FEED00358B51 /* CameraViewController.swift */,
+				CAC4F89F25C9FEFC00358B51 /* NotificationViewController.swift */,
+				CAC4F8A225C9FF0700358B51 /* ProfileViewController.swift */,
+			);
+			path = CoreTabs;
+			sourceTree = "<group>";
+		};
+		CAC4F8A725CA07D000358B51 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				CAC4F8A825CA07D500358B51 /* Onboarding */,
+				CAC4F8AF25CA083200358B51 /* PostViewController.swift */,
+				CAC4F8B225CA085700358B51 /* EditProfileViewController.swift */,
+				CAC4F8B525CA0A1700358B51 /* SettingsViewController.swift */,
+				CAC4F8B825CA0AAE00358B51 /* ListViewController.swift */,
+				CAC4F8BB25CA0AD600358B51 /* SearchViewController.swift */,
+				CAC4F8BE25CA0AE100358B51 /* SeachResultViewController.swift */,
+				CAC4F8C125CA0B2B00358B51 /* PostEditorViewController.swift */,
+				CAC4F8C425CA0B7400358B51 /* PostPublishViewController.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		CAC4F8A825CA07D500358B51 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				CAC4F8A925CA07E700358B51 /* RegisterViewController.swift */,
+				CAC4F8AC25CA07F100358B51 /* LoginViewController.swift */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,13 +243,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAC4F8B325CA085700358B51 /* EditProfileViewController.swift in Sources */,
+				CAC4F8AD25CA07F100358B51 /* LoginViewController.swift in Sources */,
 				CAC4F89A25C9FED100358B51 /* ExploreViewController.swift in Sources */,
 				CAC4F89D25C9FEED00358B51 /* CameraViewController.swift in Sources */,
 				CAC4F8A025C9FEFC00358B51 /* NotificationViewController.swift in Sources */,
+				CAC4F8C225CA0B2B00358B51 /* PostEditorViewController.swift in Sources */,
+				CAC4F8B025CA083200358B51 /* PostViewController.swift in Sources */,
+				CAC4F8AA25CA07E700358B51 /* RegisterViewController.swift in Sources */,
 				CAC4F88325C9F5C200358B51 /* HomeViewController.swift in Sources */,
+				CAC4F8BF25CA0AE100358B51 /* SeachResultViewController.swift in Sources */,
+				CAC4F8BC25CA0AD600358B51 /* SearchViewController.swift in Sources */,
 				CAC4F8A325C9FF0700358B51 /* ProfileViewController.swift in Sources */,
 				CAC4F87F25C9F5C200358B51 /* AppDelegate.swift in Sources */,
 				CAC4F88125C9F5C200358B51 /* SceneDelegate.swift in Sources */,
+				CAC4F8B925CA0AAE00358B51 /* ListViewController.swift in Sources */,
+				CAC4F8C525CA0B7400358B51 /* PostPublishViewController.swift in Sources */,
+				CAC4F8B625CA0A1700358B51 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
