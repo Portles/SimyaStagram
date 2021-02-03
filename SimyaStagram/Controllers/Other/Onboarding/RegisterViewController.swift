@@ -9,21 +9,71 @@ import UIKit
 
 class RegisterViewController: UIViewController {
 
+    private let usernameEmailField: UITextField = {
+       
+        return UITextField()
+    }()
+    
+    private let passwordField: UITextField = {
+        let field = UITextField()
+        field.isSecureTextEntry = true
+        return UITextField()
+    }()
+    
+    private let loginButton: UIButton = {
+        let button = UIButton()
+        
+        return button
+    }()
+    
+    private let termsButton: UIButton = {
+        let button = UIButton()
+        
+        return button
+    }()
+    
+    private let privacyButton: UIButton = {
+        let button = UIButton()
+        
+        return button
+    }()
+    
+    private let createAccountButton: UIButton = {
+        let button = UIButton()
+        
+        return button
+    }()
+    
+    private let headerView: UIView = {
+        let view = UIView()
+        
+        return view
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        addSubViews()
+        view.backgroundColor = .systemBackground
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
     }
-    */
-
+    
+    func addSubViews(){
+        view.addSubview(usernameEmailField)
+        view.addSubview(passwordField)
+        view.addSubview(loginButton)
+        view.addSubview(termsButton)
+        view.addSubview(privacyButton)
+        view.addSubview(createAccountButton)
+        view.addSubview(headerView)
+    }
+    
+    @objc private func didTapLoginButton() {}
+    @objc private func didTapTermsButton() {}
+    @objc private func didTapPrivacyButton() {}
+    @objc private func didTapCreateAccountButton() {}
+    
 }

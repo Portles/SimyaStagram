@@ -6,5 +6,13 @@ target 'SimyaStagram' do
   use_frameworks!
 
   # Pods for SimyaStagram
+pod 'Appirater'
+
+pod 'Firebase/Core'
+pod 'Firebase/Auth'
+pod 'Firebase/Database'
+pod 'Firebase/Analytics'
+pod 'Firebase/Crashlytics'
+pod 'Firebase/Storage'
 
 end

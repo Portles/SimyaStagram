@@ -3,10 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B3DBCA851CEA040887775532 /* Pods_SimyaStagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C3977E05D14F0515BD20293 /* Pods_SimyaStagram.framework */; };
+		CA277C6625CB040B002C6F11 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA277C6525CB040B002C6F11 /* DatabaseManager.swift */; };
+		CA277C6925CB0577002C6F11 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA277C6825CB0577002C6F11 /* AuthManager.swift */; };
+		CA277C6C25CB05EC002C6F11 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA277C6B25CB05EC002C6F11 /* StorageManager.swift */; };
+		CAC21A4625CAAE4D003A9E7A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CAC21A4525CAAE4D003A9E7A /* GoogleService-Info.plist */; };
 		CAC4F87F25C9F5C200358B51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC4F87E25C9F5C200358B51 /* AppDelegate.swift */; };
 		CAC4F88125C9F5C200358B51 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC4F88025C9F5C200358B51 /* SceneDelegate.swift */; };
 		CAC4F88325C9F5C200358B51 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC4F88225C9F5C200358B51 /* HomeViewController.swift */; };
@@ -30,6 +35,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C3977E05D14F0515BD20293 /* Pods_SimyaStagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimyaStagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		94BA068A6BFB5213896DA40B /* Pods-SimyaStagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimyaStagram.debug.xcconfig"; path = "Target Support Files/Pods-SimyaStagram/Pods-SimyaStagram.debug.xcconfig"; sourceTree = "<group>"; };
+		99844BF7BF5EE7861DC7C084 /* Pods-SimyaStagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimyaStagram.release.xcconfig"; path = "Target Support Files/Pods-SimyaStagram/Pods-SimyaStagram.release.xcconfig"; sourceTree = "<group>"; };
+		CA277C6525CB040B002C6F11 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		CA277C6825CB0577002C6F11 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		CA277C6B25CB05EC002C6F11 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		CAC21A4525CAAE4D003A9E7A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CAC4F87B25C9F5C200358B51 /* SimyaStagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimyaStagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAC4F87E25C9F5C200358B51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CAC4F88025C9F5C200358B51 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,17 +71,52 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3DBCA851CEA040887775532 /* Pods_SimyaStagram.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C50A3982B3F9E783C1680E5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				94BA068A6BFB5213896DA40B /* Pods-SimyaStagram.debug.xcconfig */,
+				99844BF7BF5EE7861DC7C084 /* Pods-SimyaStagram.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		96BC9ED011375158391C78D1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3C3977E05D14F0515BD20293 /* Pods_SimyaStagram.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CAC21A4925CAC92D003A9E7A /* General */ = {
+			isa = PBXGroup;
+			children = (
+				CAC4F8AF25CA083200358B51 /* PostViewController.swift */,
+				CAC4F8B225CA085700358B51 /* EditProfileViewController.swift */,
+				CAC4F8B525CA0A1700358B51 /* SettingsViewController.swift */,
+				CAC4F8B825CA0AAE00358B51 /* ListViewController.swift */,
+				CAC4F8BB25CA0AD600358B51 /* SearchViewController.swift */,
+				CAC4F8BE25CA0AE100358B51 /* SeachResultViewController.swift */,
+				CAC4F8C125CA0B2B00358B51 /* PostEditorViewController.swift */,
+				CAC4F8C425CA0B7400358B51 /* PostPublishViewController.swift */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
 		CAC4F87225C9F5C200358B51 = {
 			isa = PBXGroup;
 			children = (
 				CAC4F87D25C9F5C200358B51 /* SimyaStagram */,
 				CAC4F87C25C9F5C200358B51 /* Products */,
+				0C50A3982B3F9E783C1680E5 /* Pods */,
+				96BC9ED011375158391C78D1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,8 +143,12 @@
 		CAC4F89325C9FD4D00358B51 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				CAC21A4525CAAE4D003A9E7A /* GoogleService-Info.plist */,
 				CAC4F87E25C9F5C200358B51 /* AppDelegate.swift */,
 				CAC4F88025C9F5C200358B51 /* SceneDelegate.swift */,
+				CA277C6525CB040B002C6F11 /* DatabaseManager.swift */,
+				CA277C6825CB0577002C6F11 /* AuthManager.swift */,
+				CA277C6B25CB05EC002C6F11 /* StorageManager.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -152,14 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				CAC4F8A825CA07D500358B51 /* Onboarding */,
-				CAC4F8AF25CA083200358B51 /* PostViewController.swift */,
-				CAC4F8B225CA085700358B51 /* EditProfileViewController.swift */,
-				CAC4F8B525CA0A1700358B51 /* SettingsViewController.swift */,
-				CAC4F8B825CA0AAE00358B51 /* ListViewController.swift */,
-				CAC4F8BB25CA0AD600358B51 /* SearchViewController.swift */,
-				CAC4F8BE25CA0AE100358B51 /* SeachResultViewController.swift */,
-				CAC4F8C125CA0B2B00358B51 /* PostEditorViewController.swift */,
-				CAC4F8C425CA0B7400358B51 /* PostPublishViewController.swift */,
+				CAC21A4925CAC92D003A9E7A /* General */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -180,9 +224,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CAC4F88F25C9F5C300358B51 /* Build configuration list for PBXNativeTarget "SimyaStagram" */;
 			buildPhases = (
+				BDB87D840BD3273D0E45B337 /* [CP] Check Pods Manifest.lock */,
 				CAC4F87725C9F5C200358B51 /* Sources */,
 				CAC4F87825C9F5C200358B51 /* Frameworks */,
 				CAC4F87925C9F5C200358B51 /* Resources */,
+				E145CBAFCFAFEC115B7155F3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -231,12 +277,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				CAC4F88B25C9F5C300358B51 /* LaunchScreen.storyboard in Resources */,
+				CAC21A4625CAAE4D003A9E7A /* GoogleService-Info.plist in Resources */,
 				CAC4F88825C9F5C300358B51 /* Assets.xcassets in Resources */,
 				CAC4F88625C9F5C200358B51 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BDB87D840BD3273D0E45B337 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SimyaStagram-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E145CBAFCFAFEC115B7155F3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SimyaStagram/Pods-SimyaStagram-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SimyaStagram/Pods-SimyaStagram-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SimyaStagram/Pods-SimyaStagram-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CAC4F87725C9F5C200358B51 /* Sources */ = {
@@ -250,12 +339,15 @@
 				CAC4F8A025C9FEFC00358B51 /* NotificationViewController.swift in Sources */,
 				CAC4F8C225CA0B2B00358B51 /* PostEditorViewController.swift in Sources */,
 				CAC4F8B025CA083200358B51 /* PostViewController.swift in Sources */,
+				CA277C6C25CB05EC002C6F11 /* StorageManager.swift in Sources */,
 				CAC4F8AA25CA07E700358B51 /* RegisterViewController.swift in Sources */,
+				CA277C6625CB040B002C6F11 /* DatabaseManager.swift in Sources */,
 				CAC4F88325C9F5C200358B51 /* HomeViewController.swift in Sources */,
 				CAC4F8BF25CA0AE100358B51 /* SeachResultViewController.swift in Sources */,
 				CAC4F8BC25CA0AD600358B51 /* SearchViewController.swift in Sources */,
 				CAC4F8A325C9FF0700358B51 /* ProfileViewController.swift in Sources */,
 				CAC4F87F25C9F5C200358B51 /* AppDelegate.swift in Sources */,
+				CA277C6925CB0577002C6F11 /* AuthManager.swift in Sources */,
 				CAC4F88125C9F5C200358B51 /* SceneDelegate.swift in Sources */,
 				CAC4F8B925CA0AAE00358B51 /* ListViewController.swift in Sources */,
 				CAC4F8C525CA0B7400358B51 /* PostPublishViewController.swift in Sources */,
@@ -403,6 +495,7 @@
 		};
 		CAC4F89025C9F5C300358B51 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94BA068A6BFB5213896DA40B /* Pods-SimyaStagram.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -422,6 +515,7 @@
 		};
 		CAC4F89125C9F5C300358B51 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99844BF7BF5EE7861DC7C084 /* Pods-SimyaStagram.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
