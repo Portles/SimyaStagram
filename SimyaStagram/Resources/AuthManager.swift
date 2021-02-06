@@ -28,7 +28,6 @@ public class AuthManager {
                             completion(false)
                             return
                         }
-                        
                     }
                 }
             }else {
@@ -49,6 +48,18 @@ public class AuthManager {
             }
         }else if let username = username {
             print(username)
+        }
+    }
+    
+    public func LogOut(completion: (Bool) -> Void) {
+        do {
+            try Auth.auth().signOut()
+            completion(true)
+            return
+        }catch{
+            print(error)
+            completion(false)
+            return
         }
     }
 }

@@ -100,9 +100,9 @@
 		CAC21A4925CAC92D003A9E7A /* General */ = {
 			isa = PBXGroup;
 			children = (
+				CAC4F8B525CA0A1700358B51 /* SettingsViewController.swift */,
 				CAC4F8AF25CA083200358B51 /* PostViewController.swift */,
 				CAC4F8B225CA085700358B51 /* EditProfileViewController.swift */,
-				CAC4F8B525CA0A1700358B51 /* SettingsViewController.swift */,
 				CAC4F8B825CA0AAE00358B51 /* ListViewController.swift */,
 				CAC4F8BB25CA0AD600358B51 /* SearchViewController.swift */,
 				CAC4F8BE25CA0AE100358B51 /* SeachResultViewController.swift */,
@@ -513,7 +513,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.nizo.SimyaStagram;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -533,7 +533,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.nizo.SimyaStagram;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
