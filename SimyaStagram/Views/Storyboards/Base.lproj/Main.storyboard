@@ -67,7 +67,7 @@
         <scene sceneID="MMk-Zz-oOd">
             <objects>
                 <navigationController id="PVV-4k-lGe" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="globe" catalog="system" id="VAq-kd-gUO"/>
+                    <tabBarItem key="tabBarItem" title="" image="magnifyingglass" catalog="system" id="VAq-kd-gUO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="SVK-TQ-NRn">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -101,7 +101,7 @@
         <scene sceneID="gOx-Yv-iQY">
             <objects>
                 <navigationController id="0If-p1-wWc" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="bell.fill" catalog="system" id="Eqb-ss-2ac"/>
+                    <tabBarItem key="tabBarItem" title="" image="heart.fill" catalog="system" id="Eqb-ss-2ac"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="9o1-mk-94j">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -197,10 +197,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bell.fill" catalog="system" width="128" height="124"/>
         <image name="camera.fill" catalog="system" width="128" height="94"/>
-        <image name="globe" catalog="system" width="128" height="121"/>
+        <image name="heart.fill" catalog="system" width="128" height="109"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
