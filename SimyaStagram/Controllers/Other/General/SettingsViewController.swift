@@ -4,7 +4,7 @@
 //
 //  Created by Nizamet Özkan on 3.02.2021.
 //
-
+import SafariServices
 import UIKit
 
 struct SettingCellModel {
@@ -37,12 +37,71 @@ final class SettingsViewController: UIViewController {
     }
     
     private func configureModels() {
-        let section = [
+        data.append([
+            SettingCellModel(title: "Edit Profile") { [weak self] in
+                self?.didTapEditProfile()
+            },
+            SettingCellModel(title: "Invite Friends") { [weak self] in
+                self?.didTapInviteFriends()
+            },
+            SettingCellModel(title: "Save Original Posts") { [weak self] in
+                self?.didTapSaveOriginalPosts()
+            }
+        ])
+        data.append([
+            SettingCellModel(title: "Terms of Service") { [weak self] in
+                self?.openUrl(type: .terms)
+            },
+            SettingCellModel(title: "Privacy Policy") { [weak self] in
+                self?.openUrl(type: .privacy)
+            },
+            SettingCellModel(title: "Feedback") { [weak self] in
+                self?.openUrl(type: .feedback)
+            }
+        ])
+        data.append([
             SettingCellModel(title: "Log Out") { [weak self] in
                 self?.didTapLogOut()
             }
-        ]
-        data.append(section)
+        ])
+    }
+    
+    private func didTapEditProfile() {
+        let vc = EditProfileViewController()
+        vc.title = "Edit Profile"
+        let navVC = UINavigationController(rootViewController: vc)
+        present(navVC, animated: true)
+    }
+    private func didTapInviteFriends() {
+        
+    }
+    private func didTapSaveOriginalPosts(){
+        
+    }
+    
+    
+    enum urlType {
+        case terms, privacy, feedback
+    }
+    
+    private func openUrl(type: urlType) {
+        let urlString: String
+        switch type {
+        case .terms: urlString = "https://twitter.com/Portles005"
+        case .privacy: urlString = "https://www.facebook.com/nizamet.ozkan/"
+        case .feedback: urlString = "https://gameforge.com/tr-TR/play/nostale"
+        }
+        
+        guard let url = URL(string: urlString) else {
+            return
+        }
+        
+        let vc = SFSafariViewController(url: url)
+        present(vc, animated: true)
+    }
+    
+    private func didTapFeedback() {
+        
     }
     
     private func didTapLogOut() {
@@ -83,6 +142,7 @@ extension SettingsViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableview.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         cell.textLabel?.text = data[indexPath.section][indexPath.row].title
+        cell.accessoryType = .disclosureIndicator
         return cell
     }
     
