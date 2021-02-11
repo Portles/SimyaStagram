@@ -12,6 +12,7 @@
 		CA277C6925CB0577002C6F11 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA277C6825CB0577002C6F11 /* AuthManager.swift */; };
 		CA277C6C25CB05EC002C6F11 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA277C6B25CB05EC002C6F11 /* StorageManager.swift */; };
 		CA3790A825D2C51000AD4A0C /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3790A725D2C51000AD4A0C /* Models.swift */; };
+		CA3EB97725D56C8E008E8AF1 /* UserFollowViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3EB97625D56C8E008E8AF1 /* UserFollowViewCell.swift */; };
 		CAB08B2A25CBCE6300263AF2 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB08B2925CBCE6300263AF2 /* Extensions.swift */; };
 		CAB9ECC125D0B09200D0C9EA /* FormTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB9ECC025D0B09200D0C9EA /* FormTableViewCell.swift */; };
 		CAC21A4625CAAE4D003A9E7A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CAC21A4525CAAE4D003A9E7A /* GoogleService-Info.plist */; };
@@ -52,6 +53,7 @@
 		CA277C6825CB0577002C6F11 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		CA277C6B25CB05EC002C6F11 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		CA3790A725D2C51000AD4A0C /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		CA3EB97625D56C8E008E8AF1 /* UserFollowViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFollowViewCell.swift; sourceTree = "<group>"; };
 		CAB08B2925CBCE6300263AF2 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		CAB9ECC025D0B09200D0C9EA /* FormTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTableViewCell.swift; sourceTree = "<group>"; };
 		CAC21A4525CAAE4D003A9E7A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -258,6 +260,7 @@
 				CAE2500525CFD1D200D2F867 /* IGViewPostHeaderTableViewCell.swift */,
 				CAE2500925CFD28300D2F867 /* IGFeedPostActionTableViewCell.swift */,
 				CAE2500C25CFD2B700D2F867 /* IGFeedPostGeneralTableViewCell.swift */,
+				CA3EB97625D56C8E008E8AF1 /* UserFollowViewCell.swift */,
 			);
 			path = HomeFeedCells;
 			sourceTree = "<group>";
@@ -415,6 +418,7 @@
 				CAC4F88125C9F5C200358B51 /* SceneDelegate.swift in Sources */,
 				CAC4F8B925CA0AAE00358B51 /* ListViewController.swift in Sources */,
 				CAC4F8C525CA0B7400358B51 /* PostPublishViewController.swift in Sources */,
+				CA3EB97725D56C8E008E8AF1 /* UserFollowViewCell.swift in Sources */,
 				CAC4F8B625CA0A1700358B51 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -125,7 +125,7 @@ class LoginViewController: UIViewController {
         guard headerView.subviews.count == 1 else{
             return
         }
-        guard var backgoundView = headerView.subviews.first as? UIView else {
+        guard let backgoundView = headerView.subviews.first else {
             return
         }
         backgoundView.frame = headerView.bounds

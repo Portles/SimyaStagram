@@ -92,7 +92,7 @@ extension ProfileViewController: UICollectionViewDelegate, UICollectionViewDataS
         
         if indexPath.section == 1 {
             let tabControlHeader = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: ProfileTabsCollectionReusableView.identifier, for: indexPath) as! ProfileTabsCollectionReusableView
-            
+            tabControlHeader.delegate = self
             return tabControlHeader
         }
         
@@ -106,7 +106,7 @@ extension ProfileViewController: UICollectionViewDelegate, UICollectionViewDataS
         if section == 0 {
             return CGSize(width: collectionView.width, height: collectionView.height/3)
         }
-        return CGSize(width: collectionView.width, height: 65)
+        return CGSize(width: collectionView.width, height: 50)
     }
     
 }
@@ -116,14 +116,14 @@ extension ProfileViewController: ProfileInfoHeaderCollectionReusableViewDelegate
     }
     
     func profileHeaderDidTapFallowesButton(_ header: ProfileInfoHeaderCollectionReusableView) {
-        let vc = ListViewController()
+        let vc = ListViewController(data: ["Simya, Nizam"])
         vc.title = "Followes"
         vc.navigationItem.largeTitleDisplayMode = .never
         navigationController?.pushViewController(vc, animated: true)
     }
     
     func profileHeaderDidTapFallowingButton(_ header: ProfileInfoHeaderCollectionReusableView) {
-        let vc = ListViewController()
+        let vc = ListViewController(data: ["Simya, Nizam"])
         vc.title = "Following"
         vc.navigationItem.largeTitleDisplayMode = .never
         navigationController?.pushViewController(vc, animated: true)
@@ -134,6 +134,18 @@ extension ProfileViewController: ProfileInfoHeaderCollectionReusableViewDelegate
         vc.title = "Edit Profile"
         vc.navigationItem.largeTitleDisplayMode = .never
         present(UINavigationController(rootViewController: vc), animated: true, completion: nil)
+    }
+    
+    
+}
+
+extension ProfileViewController: ProfileTabsCollectionReusableViewDelegate {
+    func didTapGridButton() {
+        
+    }
+    
+    func didTapTaggedButton() {
+        
     }
     
     
