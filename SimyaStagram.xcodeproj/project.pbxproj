@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		B3DBCA851CEA040887775532 /* Pods_SimyaStagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C3977E05D14F0515BD20293 /* Pods_SimyaStagram.framework */; };
+		CA07A12525D6FD5900DC2108 /* NoNotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA07A12425D6FD5900DC2108 /* NoNotificationsView.swift */; };
+		CA07A12925D7166C00DC2108 /* NotificationFollowEventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA07A12825D7166C00DC2108 /* NotificationFollowEventTableViewCell.swift */; };
+		CA07A12D25D7168200DC2108 /* NotificationLikeEventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA07A12C25D7168200DC2108 /* NotificationLikeEventTableViewCell.swift */; };
 		CA277C6625CB040B002C6F11 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA277C6525CB040B002C6F11 /* DatabaseManager.swift */; };
 		CA277C6925CB0577002C6F11 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA277C6825CB0577002C6F11 /* AuthManager.swift */; };
 		CA277C6C25CB05EC002C6F11 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA277C6B25CB05EC002C6F11 /* StorageManager.swift */; };
@@ -49,6 +52,9 @@
 		3C3977E05D14F0515BD20293 /* Pods_SimyaStagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimyaStagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		94BA068A6BFB5213896DA40B /* Pods-SimyaStagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimyaStagram.debug.xcconfig"; path = "Target Support Files/Pods-SimyaStagram/Pods-SimyaStagram.debug.xcconfig"; sourceTree = "<group>"; };
 		99844BF7BF5EE7861DC7C084 /* Pods-SimyaStagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimyaStagram.release.xcconfig"; path = "Target Support Files/Pods-SimyaStagram/Pods-SimyaStagram.release.xcconfig"; sourceTree = "<group>"; };
+		CA07A12425D6FD5900DC2108 /* NoNotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoNotificationsView.swift; sourceTree = "<group>"; };
+		CA07A12825D7166C00DC2108 /* NotificationFollowEventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationFollowEventTableViewCell.swift; sourceTree = "<group>"; };
+		CA07A12C25D7168200DC2108 /* NotificationLikeEventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationLikeEventTableViewCell.swift; sourceTree = "<group>"; };
 		CA277C6525CB040B002C6F11 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		CA277C6825CB0577002C6F11 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		CA277C6B25CB05EC002C6F11 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
@@ -115,6 +121,15 @@
 				3C3977E05D14F0515BD20293 /* Pods_SimyaStagram.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CA07A12725D7163900DC2108 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				CA07A12825D7166C00DC2108 /* NotificationFollowEventTableViewCell.swift */,
+				CA07A12C25D7168200DC2108 /* NotificationLikeEventTableViewCell.swift */,
+			);
+			path = Notifications;
 			sourceTree = "<group>";
 		};
 		CAC21A4925CAC92D003A9E7A /* General */ = {
@@ -191,6 +206,7 @@
 				CAE24FFF25CFCF6D00D2F867 /* Cells */,
 				CAC4F89725C9FDEA00358B51 /* Storyboards */,
 				CAC4F88725C9F5C300358B51 /* Assets.xcassets */,
+				CA07A12425D6FD5900DC2108 /* NoNotificationsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -246,6 +262,7 @@
 		CAE24FFF25CFCF6D00D2F867 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				CA07A12725D7163900DC2108 /* Notifications */,
 				CAE2500425CFD19B00D2F867 /* HomeFeedCells */,
 				CAB9ECC025D0B09200D0C9EA /* FormTableViewCell.swift */,
 				CAFDE53D25D1F63200DFAC3E /* PhotoCollectionViewCell.swift */,
@@ -395,7 +412,9 @@
 				CAC4F89A25C9FED100358B51 /* ExploreViewController.swift in Sources */,
 				CAC4F89D25C9FEED00358B51 /* CameraViewController.swift in Sources */,
 				CAC4F8A025C9FEFC00358B51 /* NotificationViewController.swift in Sources */,
+				CA07A12525D6FD5900DC2108 /* NoNotificationsView.swift in Sources */,
 				CAC4F8C225CA0B2B00358B51 /* PostEditorViewController.swift in Sources */,
+				CA07A12925D7166C00DC2108 /* NotificationFollowEventTableViewCell.swift in Sources */,
 				CAC4F8B025CA083200358B51 /* PostViewController.swift in Sources */,
 				CA277C6C25CB05EC002C6F11 /* StorageManager.swift in Sources */,
 				CA3790A825D2C51000AD4A0C /* Models.swift in Sources */,
@@ -411,6 +430,7 @@
 				CAC4F8BC25CA0AD600358B51 /* SearchViewController.swift in Sources */,
 				CAE2500D25CFD2B700D2F867 /* IGFeedPostGeneralTableViewCell.swift in Sources */,
 				CAB08B2A25CBCE6300263AF2 /* Extensions.swift in Sources */,
+				CA07A12D25D7168200DC2108 /* NotificationLikeEventTableViewCell.swift in Sources */,
 				CAFDE54225D1F6BC00DFAC3E /* ProfileInfoHeaderCollectionReusableView.swift in Sources */,
 				CAC4F8A325C9FF0700358B51 /* ProfileViewController.swift in Sources */,
 				CAC4F87F25C9F5C200358B51 /* AppDelegate.swift in Sources */,
@@ -570,6 +590,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AAG6CZ7HRY;
 				INFOPLIST_FILE = SimyaStagram/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -590,6 +611,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AAG6CZ7HRY;
 				INFOPLIST_FILE = SimyaStagram/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
