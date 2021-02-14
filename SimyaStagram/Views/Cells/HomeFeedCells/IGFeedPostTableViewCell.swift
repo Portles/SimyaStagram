@@ -22,4 +22,9 @@ final class IGFeedPostTableViewCell: UITableViewCell {
     public func configure() {
         
     }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        contentView.backgroundColor = .orange
+    }
 }

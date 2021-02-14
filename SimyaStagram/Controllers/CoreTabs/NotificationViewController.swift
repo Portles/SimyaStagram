@@ -52,9 +52,10 @@ final class NotificationViewController: UIViewController {
     }
     
     private func fetchNotifications() {
-        let post = UserPost(identifier: "", postType: .photo, thumbnail: URL(string: "www.google.com")!, postUrl: URL(string: "www.google.com")!, caption: nil, likeCount: [], comments: [], createdDate: Date(), taggedUsers: [])
+        let user = User(username: "Nixam", bio: "", name: (first: "Dansöz", last: ""), birthDate: Date(), gender: .male, counts: UserCount(followers: 1, following: 1, posts: 1), joinDate: Date(), profilePhoto: URL(string: "https://avatars.githubusercontent.com/u/53916133?s=460&u=a11587a54379a3daf69f9bd3381763a536b74b3f&v=4")!)
+        let post = UserPost(identifier: "", postType: .photo, thumbnail: URL(string: "www.google.com")!, postUrl: URL(string: "www.google.com")!, caption: nil, likeCount: [], comments: [], createdDate: Date(), taggedUsers: [], owner: user)
         for x in 1...100 {
-            let model = UserNotification(type: x % 2 == 0 ? .like(post: post) : .follow(state: .not_following), text: "Ben bir aliğ simyağyım", user: User(username: "Nixam", bio: "", name: (first: "Dansöz", last: ""), birthDate: Date(), gender: .male, counts: UserCount(followers: 1, following: 1, posts: 1), joinDate: Date(), profilePhoto: URL(string: "https://avatars.githubusercontent.com/u/53916133?s=460&u=a11587a54379a3daf69f9bd3381763a536b74b3f&v=4")!))
+            let model = UserNotification(type: x % 2 == 0 ? .like(post: post) : .follow(state: .not_following), text: "Ben bir aliğ simyağyım", user: user)
             
             models.append(model)
         }
@@ -104,7 +105,15 @@ extension NotificationViewController: UITableViewDelegate, UITableViewDataSource
 
 extension NotificationViewController :NotificationLikeEventTableViewCellDelegate {
     func didTapRelatedPostButton(model: UserNotification) {
-        print("User Tapped")
+        switch model.type {
+        case .like(let post):
+            let vc = PostViewController(model: post)
+            vc.title = post.postType.rawValue
+            vc.navigationItem.largeTitleDisplayMode = .never
+            navigationController?.pushViewController(vc, animated: true)
+        case .follow(_):
+            fatalError("dANCE")
+        }
     }
 }
 
